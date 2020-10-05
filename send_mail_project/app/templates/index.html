@@ -1,0 +1,12 @@
+{% extends "wrapper.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <h4 class="text-center text-success w-100">Новое письмо</h4>
+  <form action='' method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group text-success">
+        {{ form|crispy }}
+    </div>
+    <input class="btn btn-success w-100 my-3" type="submit" value="Отправить"> 
+  </form>
+{% endblock %}

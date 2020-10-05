@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>SkillFactory:D10.9</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/car.ico' %}">
+  </head>
+  <body>
+    <div class="container text-secondary">
+      <div class="row py-3">
+        <div class="col">
+          <h3 class="text-success font-weight-bold">SkillFactory: E2.9 Домашнее задание</h3>
+        </div>
+        <div class="col-auto">
+            <a class="btn btn-success mr-2" href="/">Новое письмо</a>
+            <a class="btn btn-success" href="/list">Список отправленных писем</a>
+        </div>
+      </div>
+      <div class="text-justify">
+        <p>В данном задании нужно реализовать сервис, который будет отправлять email через заданное количество секунд. Для этого мы делаем две страницы. На первой странице вводим параметры (текст email и через какое количество секунд его отправить). На второй странице показываем последние десять писем, которые мы поставили в план (и те, что должны отправиться в будущем, и уже отправленные).</p>
+        <p>Данный сервис должен быть реализован с применением многопоточности: после того, как письмо создано, должен создаться тред, который должен быть закрыт в какой-то момент.</p>
+        <p>Сервис должен быть задеплоен на heroku, код задания должен быть на GitHub. Используйте сторонние библиотеки и фреймворки по своему усмотрению.</p>
+      </div>
+      <div class="jumbotron bg-light border border-success py-4 my-5">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
+
