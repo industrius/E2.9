@@ -29,14 +29,10 @@ pip install -r requirements.txt
 
 python manage.py migrate
 
-7. Импортировать в БД данные книг, авторов, издателей и тестовых пользователей:
-
-python manage.py loaddata data.xml
-
-8. Запустить сервер:
+7. Запустить сервер:
 
 python manage.py runserver
 
-9. Открыть URL:
+8. Открыть URL:
 
 http://127.0.0.1:8000/
