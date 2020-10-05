@@ -32,10 +32,14 @@ python manage.py migrate
 7. Добавить данные SMTP сервера:
 
 Заполнить в файле settings.py параметры
-EMAIL_HOST = 
+EMAIL_HOST =
+
 EMAIL_PORT = 
+
 EMAIL_HOST_USER = 
+
 EMAIL_HOST_PASSWORD = 
+
 
 8. Запустить сервер:
 
