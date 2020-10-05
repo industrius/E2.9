@@ -29,10 +29,18 @@ pip install -r requirements.txt
 
 python manage.py migrate
 
-7. Запустить сервер:
+7. Добавить данные SMTP сервера:
+
+Заполнить в файле settings.py параметры
+EMAIL_HOST = 
+EMAIL_PORT = 
+EMAIL_HOST_USER = 
+EMAIL_HOST_PASSWORD = 
+
+8. Запустить сервер:
 
 python manage.py runserver
 
-8. Открыть URL:
+9. Открыть URL:
 
 http://127.0.0.1:8000/
